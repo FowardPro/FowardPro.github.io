@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile of Foward Nkuna</title>
+    <title>Profile of Forward Nkuna</title>
     <style>
         @keyframes fadeIn {
             0% {
@@ -18,35 +18,64 @@
             }
         }
 
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f0f0f7;
             color: #333;
             line-height: 1.6;
             margin: 20px;
-            animation: fadeIn 1s ease-in-out;
         }
 
         .profile-container {
             max-width: 800px;
             margin: auto;
             padding: 20px;
-            background: linear-gradient(135deg, #fff, #f0f0f5);
+            background: #ffffff;
             border: 1px solid #ddd;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1s ease-in-out;
         }
 
         h1,
         h2 {
-            color: #444;
+            color: #333;
             animation: fadeIn 2s ease-in-out;
         }
 
         h1 {
+            font-size: 2.5em;
             text-align: center;
             margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #4CAF50, #2196F3);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: fadeIn 2s ease-in-out;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #ddd;
+            animation: slideIn 1.5s ease-in-out;
         }
 
         .profile-picture {
@@ -54,36 +83,27 @@
             max-width: 150px;
             margin: 0 auto 20px;
             border-radius: 50%;
-            border: 2px solid #ddd;
+            border: 4px solid #ddd;
             animation: fadeIn 1.5s ease-in-out;
         }
 
-        .section-title {
-            font-size: 1.5em;
-            margin-top: 20px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            animation: fadeIn 2s ease-in-out;
-            cursor: pointer;
+        p {
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         ul {
             list-style-type: none;
             padding: 0;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         ul li {
             background: #f9f9f9;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
             border: 1px solid #ddd;
             animation: fadeIn 1.5s ease-in-out;
-            transition: background 0.3s ease-in-out;
-        }
-
-        ul li:hover {
-            background: #e0e0e5;
         }
 
         .personal-details,
@@ -97,39 +117,46 @@
         .contact-info div,
         .capabilities div {
             flex: 1 1 45%;
-            margin: 5px 0;
+            margin: 10px 0;
             animation: fadeIn 1.5s ease-in-out;
         }
 
         .github-link {
             display: block;
-            margin-top: 20px;
+            margin-top: 15px;
             text-align: center;
-            animation: fadeIn 2s ease-in-out;
         }
 
         .github-link a {
-            color: #0077b5;
+            color: #009688;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s ease-in-out;
+            animation: fadeIn 2s ease-in-out;
         }
 
         .github-link a:hover {
-            color: #005582;
+            color: #00796b;
+            text-decoration: underline;
         }
 
-        .hidden {
-            display: none;
+        .capabilities-paragraph {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            animation: slideIn 1.5s ease-in-out;
+            color: #2196F3;
         }
     </style>
 </head>
 
 <body>
     <div class="profile-container">
-        <h1 id="greeting"></h1>
-        <img src="picture.png" alt="Profile Picture of Forward Nkuna" class="profile-picture">
 
+        <img src="picture.png" alt="Profile Picture of Forward Nkuna" class="profile-picture">
+        <h1>Foward Nkuna</h1>
         <div class="github-link">
             <a href="https://github.com/FowardPro" target="_blank">GitHub Profile</a>
         </div>
@@ -137,9 +164,15 @@
             <a href="https://www.bing.com/ck/a?!&&p=a44177f6a54fb916JmltdHM9MTcxOTM2MDAwMCZpZ3VpZD0xMDU4NWFhMi0yNGI2LTYzOTAtMWFkMS00OTY2MjU5NTYyNTAmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=10585aa2-24b6-6390-1ad1-496625956250&psq=Linkedin+Foward+-+nkuna&u=a1aHR0cHM6Ly96YS5saW5rZWRpbi5jb20vaW4vZm93YXJkLW5rdW5hLTAwNzAwYTI1MA&ntb=1"
                 target="_blank">Linkedin Profile</a>
         </div>
+        <p class="capabilities-paragraph">
+            Foward Nkuna is a highly motivated individual with a diverse set of capabilities. Known for his willingness
+            to learn and strong communication skills, Forward excels in both individual and team settings. His
+            self-motivation and energetic approach make him a valuable asset in any environment. Whether it's working on
+            complex projects or collaborating with others, Forward's dedication and teamwork ensure successful outcomes.
+        </p>
 
-        <h2 class="section-title" onclick="toggleSection('personal-details')">Personal Details</h2>
-        <div id="personal-details" class="personal-details">
+        <h2 class="section-title">Personal Details</h2>
+        <div class="personal-details">
             <div><strong>First Names:</strong> Foward</div>
             <div><strong>Surname:</strong> Nkuna</div>
             <div><strong>ID Number:</strong> 9809255987088</div>
@@ -156,56 +189,50 @@
             <div><strong>Driver’s Licence:</strong> Code 10</div>
         </div>
 
-        <h2 class="section-title" onclick="toggleSection('contact-info')">Contact Information</h2>
-        <div id="contact-info" class="contact-info">
+        <h2 class="section-title">Contact Information</h2>
+        <div class="contact-info">
             <div><strong>Residential Address:</strong> 287 General Beyers St, Pretoria, 0182</div>
             <div><strong>Cell Number:</strong> 0640693714</div>
             <div><strong>Email Address:</strong> <a href="mailto:fowardnkuna6@gmail.com">fowardnkuna6@gmail.com</a>
             </div>
         </div>
 
-        <h2 class="section-title" onclick="toggleSection('educational-qualification')">Educational Qualification</h2>
-        <div id="educational-qualification" class="hidden">
-            <p><strong>Highest Grade Passed:</strong> Grade 12 (Year: 2020)</p>
-            <ul>
-                <li>English</li>
-                <li>Xitsonga</li>
-                <li>Life Orientation</li>
-                <li>Mathematics</li>
-                <li>Agricultural Sciences</li>
-                <li>Geography</li>
-                <li>Life Sciences</li>
-            </ul>
-        </div>
+        <h2 class="section-title">Educational Qualification</h2>
+        <p><strong>Highest Grade Passed:</strong> Grade 12 (Year: 2020)</p>
+        <ul>
+            <li>English</li>
+            <li>Xitsonga</li>
+            <li>Life Orientation</li>
+            <li>Mathematics</li>
+            <li>Agricultural Sciences</li>
+            <li>Geography</li>
+            <li>Life Sciences</li>
+        </ul>
 
-        <h2 class="section-title" onclick="toggleSection('tertiary-level')">Tertiary Level</h2>
-        <div id="tertiary-level" class="hidden">
-            <p><strong>Current Course:</strong> Dip Computer Science (Extended) Undergraduate</p>
-            <p><strong>Institution:</strong> Tshwane University of Technology</p>
-            <p><strong>Current Level:</strong> Final Year</p>
-            <p><strong>With Effect from:</strong> 2021</p>
-        </div>
+        <h2 class="section-title">Tertiary Level</h2>
+        <p><strong>Current Course:</strong> Dip Computer Science (Extended) Undergraduate</p>
+        <p><strong>Institution:</strong> Tshwane University of Technology</p>
+        <p><strong>Current Level:</strong> Final Year</p>
+        <p><strong>With Effect from:</strong> 2021</p>
 
-        <h2 class="section-title" onclick="toggleSection('work-experience')">Work Experience</h2>
-        <div id="work-experience" class="hidden">
-            <ul>
-                <li>
-                    <strong>Office:</strong> Dean’s Office<br>
-                    <strong>Position:</strong> Academic Tutor<br>
-                    <strong>From:</strong> 01 May 2023<br>
-                    <strong>To:</strong> 30 April 2024
-                </li>
-                <li>
-                    <strong>Office:</strong> Dean’s Office<br>
-                    <strong>Position:</strong> Academic Developer<br>
-                    <strong>From:</strong> 01 May 2024<br>
-                    <strong>To:</strong> Currently Working
-                </li>
-            </ul>
-        </div>
+        <h2 class="section-title">Work Experience</h2>
+        <ul>
+            <li>
+                <strong>Office:</strong> Dean’s Office<br>
+                <strong>Position:</strong> Academic Tutor<br>
+                <strong>From:</strong> 01 May 2023<br>
+                <strong>To:</strong> 30 April 2024
+            </li>
+            <li>
+                <strong>Office:</strong> Dean’s Office<br>
+                <strong>Position:</strong> Academic Developer<br>
+                <strong>From:</strong> 01 May 2024<br>
+                <strong>To:</strong> Currently Working
+            </li>
+        </ul>
 
-        <h2 class="section-title" onclick="toggleSection('capabilities')">Capabilities</h2>
-        <div id="capabilities" class="capabilities hidden">
+        <h2 class="section-title">Capabilities</h2>
+        <div class="capabilities">
             <div>Willing to learn</div>
             <div>Good Communication</div>
             <div>Self-Motivated</div>
@@ -213,89 +240,49 @@
             <div>Team Worker</div>
         </div>
 
-        <h2 class="section-title" onclick="toggleSection('programming-languages')">Programming Languages</h2>
-        <div id="programming-languages" class="hidden">
-            <ul>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Kotlin</li>
-                <li>Python (Basics)</li>
-                <li>C++ (Basics)</li>
-                <li>PHP</li>
-                <li>SQL/PLSQL</li>
-            </ul>
-        </div>
+        <h2 class="section-title">Programming Languages</h2>
+        <ul>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+            <li>Python (Basics)</li>
+            <li>C++ (Basics)</li>
+            <li>PHP</li>
+            <li>SQL/PLSQL</li>
+        </ul>
 
-        <h2 class="section-title" onclick="toggleSection('full-stack-skills')">Full Stack Programming Skills</h2>
-        <div id="full-stack-skills" class="hidden">
-            <ul>
-                <li>Web Application Developer</li>
-                <li>Desktop Application Developer</li>
-                <li>Mobile Application Developer</li>
-                <li>Business Analysis and Modelling</li>
-                <li>Software Testing</li>
-                <li>Database Development and Administration</li>
-            </ul>
-        </div>
+        <h2 class="section-title">Full Stack Programming Skills</h2>
+        <ul>
+            <li>Web Application Developer</li>
+            <li>Desktop Application Developer</li>
+            <li>Mobile Application Developer</li>
+            <li>Business Analysis and Modelling</li>
+            <li>Software Testing</li>
+            <li>Database Development and Administration</li>
+        </ul>
 
-        <h2 class="section-title" onclick="toggleSection('references')">References</h2>
-        <div id="references" class="hidden">
-            <ul>
-                <li>
-                    <strong>Contact Person:</strong> JP Nkuna<br>
-                    <strong>Relationship:</strong> Mother<br>
-                    <strong>Contact Number:</strong> 063 277 0729
-                </li>
-                <li>
-                    <strong>Contact Person:</strong> Molebogeng Mashilo<br>
-                    <strong>Position:</strong> Administrator<br>
-                    <strong>Contact Number:</strong> 082 051 3857
-                </li>
-                <li>
-                    <strong>Contact Person:</strong> RS Rikhotso<br>
-                    <strong>Position:</strong> High School Principal<br>
-                    <strong>Contact Number:</strong> 082 256 6392
-                </li>
-            </ul>
-        </div>
+        <h2 class="section-title">References</h2>
+        <ul>
+            <li>
+                <strong>Contact Person:</strong> JP Nkuna<br>
+                <strong>Relationship:</strong> Mother<br>
+                <strong>Contact Number:</strong> 063 277 0729
+            </li>
+            <li>
+                <strong>Contact Person:</strong> Molebogeng Mashilo<br>
+                <strong>Position:</strong> Administrator<br>
+                <strong>Contact Number:</strong> 082 051 3857
+            </li>
+            <li>
+                <strong>Contact Person:</strong> RS Rikhotso<br>
+                <strong>Position:</strong> High School Principal<br>
+                <strong>Contact Number:</strong> 082 256 6392
+            </li>
+        </ul>
 
     </div>
-
-    <script>
-        // Function to display greeting based on time of day
-        function displayGreeting() {
-            const greetingElement = document.getElementById('greeting');
-            const hours = new Date().getHours();
-            let greetingMessage;
-
-            if (hours < 12) {
-                greetingMessage = 'Good Morning!';
-            } else if (hours < 18) {
-                greetingMessage = 'Good Afternoon!';
-            } else {
-                greetingMessage = 'Good Evening!';
-            }
-
-            greetingElement.innerText = `${greetingMessage} Welcome to the Portfolio of Foward Nkuna.`;
-        }
-
-        // Function to toggle sections
-        function toggleSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section.classList.contains('hidden')) {
-                section.classList.remove('hidden');
-            } else {
-                section.classList.add('hidden');
-            }
-        }
-
-        // Initialize greeting on page load
-        window.onload = function () {
-            displayGreeting();
-        }
-    </script>
 </body>
 
 </html>
