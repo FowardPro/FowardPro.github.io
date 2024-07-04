@@ -1,288 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Foward Nkuna</title>
+    <title>Foward Nkuna's Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes slideIn {
-            0% {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
         body {
+            background-color: #e9f5ff;
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f7;
-            color: #333;
-            line-height: 1.6;
-            margin: 20px;
         }
-
-        .profile-container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        h1,
-        h2 {
-            color: #333;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            text-align: center;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            background: linear-gradient(to right, #4CAF50, #2196F3);
-            -webkit-background-clip: text;
-            color: transparent;
-            animation: fadeIn 2s ease-in-out;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            font-size: 1.8em;
-            margin-top: 20px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #ddd;
-            animation: slideIn 1.5s ease-in-out;
-        }
-
-        .profile-picture {
-            display: block;
-            max-width: 150px;
-            margin: 0 auto 20px;
+        .profile-img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 4px solid #ddd;
-            animation: fadeIn 1.5s ease-in-out;
+            margin-top: 20px;
+            border: 5px solid #77aaff;
         }
-
-        p {
-            animation: fadeIn 1.5s ease-in-out;
+        .main-content {
+            background: #fff;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            animation: fadeIn 1.5s ease-in-out;
+        .section {
+            margin-bottom: 40px;
         }
-
-        ul li {
-            background: #f9f9f9;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        .personal-details,
-        .contact-info,
-        .capabilities {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .personal-details div,
-        .contact-info div,
-        .capabilities div {
-            flex: 1 1 45%;
-            margin: 10px 0;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        .github-link {
-            display: block;
-            margin-top: 15px;
-            text-align: center;
-        }
-
-        .github-link a {
-            color: #009688;
-            text-decoration: none;
-            font-weight: bold;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        .github-link a:hover {
-            color: #00796b;
-            text-decoration: underline;
-        }
-
-        .capabilities-paragraph {
+        .section h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
             margin-bottom: 20px;
         }
-
-        .section-title {
-            margin-top: 30px;
-            margin-bottom: 10px;
-            animation: slideIn 1.5s ease-in-out;
-            color: #2196F3;
+        .section p, .section ul {
+            color: #333;
+        }
+        .section ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #0056b3;
+            color: #fff;
+        }
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+        .navbar {
+            background: #0056b3;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background: #00408a;
         }
     </style>
 </head>
-
 <body>
-    <div class="profile-container">
-
-        <img src="picture.png" alt="Profile Picture of Forward Nkuna" class="profile-picture">
+    <header class="text-center bg-dark text-white py-4">
+        <img src="picture.png" alt="Foward Nkuna" class="profile-img">
         <h1>Foward Nkuna</h1>
-        <div class="github-link">
-            <a href="https://github.com/FowardPro" target="_blank">GitHub Profile</a>
-        </div>
-        <div class="github-link">
-            <a href="https://www.bing.com/ck/a?!&&p=a44177f6a54fb916JmltdHM9MTcxOTM2MDAwMCZpZ3VpZD0xMDU4NWFhMi0yNGI2LTYzOTAtMWFkMS00OTY2MjU5NTYyNTAmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=10585aa2-24b6-6390-1ad1-496625956250&psq=Linkedin+Foward+-+nkuna&u=a1aHR0cHM6Ly96YS5saW5rZWRpbi5jb20vaW4vZm93YXJkLW5rdW5hLTAwNzAwYTI1MA&ntb=1"
-                target="_blank">Linkedin Profile</a>
-        </div>
-        <p class="capabilities-paragraph">
-            Foward Nkuna is a highly motivated individual with a diverse set of capabilities. Known for his willingness
-            to learn and strong communication skills, Forward excels in both individual and team settings. His
-            self-motivation and energetic approach make him a valuable asset in any environment. Whether it's working on
-            complex projects or collaborating with others, Foward's dedication and teamwork ensure successful outcomes.
-        </p>
+        <p>Software Developer | Computer Science Student</p>
+    </header>
 
-        <h2 class="section-title">Personal Details</h2>
-        <div class="personal-details">
-            <div><strong>First Names:</strong> Foward</div>
-            <div><strong>Surname:</strong> Nkuna</div>
-            <div><strong>ID Number:</strong> 9809255987088</div>
-            <div><strong>Date of Birth:</strong> 25 September 1998</div>
-            <div><strong>Gender:</strong> Male</div>
-            <div><strong>Nationality:</strong> South African</div>
-            <div><strong>Race:</strong> Black</div>
-            <div><strong>Disability:</strong> None</div>
-            <div><strong>Marital Status:</strong> Single</div>
-            <div><strong>Languages:</strong> English, Xitsonga, Sepedi</div>
-            <div><strong>Health:</strong> Excellent</div>
-            <div><strong>Religion:</strong> Christianity</div>
-            <div><strong>Criminal Record:</strong> None</div>
-            <div><strong>Driver’s Licence:</strong> Code 10</div>
-        </div>
+    <nav class="navbar text-center">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#capabilities">Capabilities</a>
+    </nav>
 
-        <h2 class="section-title">Contact Information</h2>
-        <div class="contact-info">
-            <div><strong>Residential Address:</strong> 287 General Beyers St, Pretoria, 0182</div>
-            <div><strong>Cell Number:</strong> 0640693714</div>
-            <div><strong>Email Address:</strong> <a href="mailto:fowardnkuna6@gmail.com">fowardnkuna6@gmail.com</a>
-            </div>
-        </div>
+    <div class="container main-content">
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Foward Nkuna, a final year Computer Science student at Tshwane University of Technology. I'm passionate about software development and have experience working as an academic tutor and developer. I love learning new technologies and working on collaborative projects.</p>
+            <p>I have a strong foundation in various programming languages including Java, HTML, CSS, JavaScript, Kotlin, Python, C++, and PHP. My journey in software development started with a curiosity about how things work, which quickly turned into a passion for creating efficient and effective software solutions.</p>
+            <p>In addition to my technical skills, I am an energetic team worker with good communication skills. I am self-motivated and always eager to learn new things. My experience as an academic developer and tutor has equipped me with the ability to explain complex concepts in a simple and understandable manner.</p>
+        </section>
 
-        <h2 class="section-title">Educational Qualification</h2>
-        <p><strong>Highest Grade Passed:</strong> Grade 12 (Year: 2020)</p>
-        <ul>
-            <li>English</li>
-            <li>Xitsonga</li>
-            <li>Life Orientation</li>
-            <li>Mathematics</li>
-            <li>Agricultural Sciences</li>
-            <li>Geography</li>
-            <li>Life Sciences</li>
-        </ul>
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <h3>Tshwane University of Technology</h3>
+            <p>Diploma in Computer Science (Extended) Undergraduate</p>
+            <p>2021 - Present (Final Year)</p>
+        </section>
 
-        <h2 class="section-title">Tertiary Level</h2>
-        <p><strong>Current Course:</strong> Dip Computer Science (Extended) Undergraduate</p>
-        <p><strong>Institution:</strong> Tshwane University of Technology</p>
-        <p><strong>Current Level:</strong> Final Year</p>
-        <p><strong>With Effect from:</strong> 2021</p>
+        <section class="section" id="experience">
+            <h2>Work Experience</h2>
+            <h3>Dean’s Office - Academic Developer</h3>
+            <p>May 2024 - Present</p>
+            <p>Currently working as an academic developer, helping students understand complex concepts in computer science and assisting with their academic projects.</p>
+            <h3>Dean’s Office - Academic Tutor</h3>
+            <p>May 2023 - April 2024</p>
+            <p>Worked as an academic tutor, providing guidance and support to students in various computer science subjects.</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/FowardPro">FowardPro</a></p>
+        </section>
 
-        <h2 class="section-title">Work Experience</h2>
-        <ul>
-            <li>
-                <strong>Office:</strong> Dean’s Office<br>
-                <strong>Position:</strong> Academic Tutor<br>
-                <strong>From:</strong> 01 May 2023<br>
-                <strong>To:</strong> 30 April 2024
-            </li>
-            <li>
-                <strong>Office:</strong> Dean’s Office<br>
-                <strong>Position:</strong> Academic Developer<br>
-                <strong>From:</strong> 01 May 2024<br>
-                <strong>To:</strong> Currently Working
-            </li>
-        </ul>
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Kotlin</li>
+                <li>Python (Basics)</li>
+                <li>C++ (Basics)</li>
+                <li>PHP</li>
+            </ul>
+        </section>
 
-        <h2 class="section-title">Capabilities</h2>
-        <div class="capabilities">
-            <div>Willing to learn</div>
-            <div>Good Communication</div>
-            <div>Self-Motivated</div>
-            <div>Energetic</div>
-            <div>Team Worker</div>
-        </div>
-
-        <h2 class="section-title">Programming Languages</h2>
-        <ul>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Kotlin</li>
-            <li>Python (Basics)</li>
-            <li>C++ (Basics)</li>
-            <li>PHP</li>
-            <li>SQL/PLSQL</li>
-        </ul>
-
-        <h2 class="section-title">Full Stack Programming Skills</h2>
-        <ul>
-            <li>Web Application Developer</li>
-            <li>Desktop Application Developer</li>
-            <li>Mobile Application Developer</li>
-            <li>Business Analysis and Modelling</li>
-            <li>Software Testing</li>
-            <li>Database Development and Administration</li>
-        </ul>
-
-        <h2 class="section-title">References</h2>
-        <ul>
-            <li>
-                <strong>Contact Person:</strong> JP Nkuna<br>
-                <strong>Relationship:</strong> Mother<br>
-                <strong>Contact Number:</strong> 063 277 0729
-            </li>
-            <li>
-                <strong>Contact Person:</strong> Molebogeng Mashilo<br>
-                <strong>Position:</strong> Administrator<br>
-                <strong>Contact Number:</strong> 082 051 3857
-            </li>
-            <li>
-                <strong>Contact Person:</strong> RS Rikhotso<br>
-                <strong>Position:</strong> High School Principal<br>
-                <strong>Contact Number:</strong> 082 256 6392
-            </li>
-        </ul>
-
+        <section class="section" id="capabilities">
+            <h2>Capabilities</h2>
+            <ul>
+                <li>Willing to learn</li>
+                <li>Good communication skills</li>
+                <li>Self-motivated</li>
+                <li>Energetic</li>
+                <li>Team worker</li>
+            </ul>
+        </section>
     </div>
-</body>
 
+    <footer>
+        <p>Contact Me</p>
+        <p>Email: <a href="mailto:fowardnkuna6@gmail.com">fowardnkuna6@gmail.com</a></p>
+        <p>Cell: 0640693714</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
